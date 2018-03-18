@@ -1,8 +1,9 @@
 var alert_component = {
   template:'<button @click="on_click">夏咩咩</button>',
+  props:['msg'],
   methods: {
     on_click: function(){
-      alert('Yo.');
+      alert(this.msg);
     }
   }
 };
